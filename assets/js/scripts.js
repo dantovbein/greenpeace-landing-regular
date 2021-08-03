@@ -240,7 +240,7 @@ jQuery(document).ready(function() {
 		dcS.synchro.init(dcDataSynchro, dcDataContact);
 
     // Send event (SK - Donación Paso 1)
-    dc.track.event('90', '90ewFHJUH5NTbIY9c', $('#email').val());
+    window.dc.track.event('90', '90ewFHJUH5NTbIY9c', $('#email').val());
     window.localStorage.setItem('tmpUserEmail', $('#email').val());
 	}
 	
@@ -350,7 +350,7 @@ function prepareSubmit(){
         $('#btn_dona').attr('disabled', false);
 
         // Send event (SK - Donación Paso 2)
-        dc.track.event('90', '903NkNhZXaQEFkgrM', $('#email').val());
+        window.dc.track.event('90', '903NkNhZXaQEFkgrM', $('#email').val());
 
         window.location.href = urlGracias;
         

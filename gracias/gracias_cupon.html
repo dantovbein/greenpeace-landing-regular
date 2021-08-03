@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="gracias_cupon_data/badge.css" rel="stylesheet" />
+    <link href="gracias_cupon_data/icon.css" rel="stylesheet" />
+    <link href="gracias_cupon_data/css.css" rel="stylesheet" />
+    <style>
+      @charset "UTF-8";
+
+      [ng\:cloak],
+      [ng-cloak],
+      [data-ng-cloak],
+      [x-ng-cloak],
+      .ng-cloak,
+      .x-ng-cloak,
+      .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+      }
+
+      ng\:form {
+        display: block;
+      }
+
+      .ng-animate-shim {
+        visibility: hidden;
+      }
+
+      .ng-anchor {
+        position: absolute;
+      }
+    </style>
+
+    <script>
+      window.onload = function() {
+        window.dc.track.event('90', '90WW9NaFnOeGur0Bs', window.localStorage.getItem('tmpUserEmail'));
+        window.localStorage.removeItem('tmpUserEmail');
+      };
+    </script>
+  </head>
+  <body style="background-color: transparent">
+    <debug-badge class="ng-isolate-scope"
+      ><frame-auto-resize
+        data-is-collapsed="ctrl.isCollapsed"
+        class="ng-isolate-scope"
+      >
+        <div class="badge badge-iframe">
+          <div class="badge-header" frame-dragger="">
+            <div>
+              <i class="icon" aria-hidden="true">drag_indicator</i>
+              <span
+                class="badge-header__logo badge__logo badge__logo--blue"
+              ></span>
+              <span class="badge-header__title">Tag Assistant</span>
+            </div>
+            <div>
+              <!-- ngIf: ctrl.isHideEnabled -->
+              <i
+                class="icon badge-header__icon"
+                title="Collapse debug badge"
+                data-ng-click="ctrl.setCollapsed()"
+              >
+                collapse_all
+              </i>
+            </div>
+          </div>
+          <!-- ngIf: !ctrl.isCollapsed -->
+          <div
+            data-ng-switch="ctrl.getFlowType()"
+            data-ng-if="!ctrl.isCollapsed"
+            class="ng-scope"
+          >
+            <!-- ngSwitchDefault: --><tag-assistant-badge
+              data-ng-switch-default=""
+              class="ng-scope ng-isolate-scope"
+              ><div data-ng-switch="ctrl.getState()">
+                <!-- ngSwitchDefault: -->
+                <!-- ngSwitchWhen: CONNECTED -->
+                <!-- ngSwitchWhen: NOT_CONNECTED -->
+                <div
+                  class="badge-body ng-scope"
+                  data-ng-switch-when="NOT_CONNECTED"
+                >
+                  <div class="badge-body__title">
+                    Tag Assistant Not Connected
+                  </div>
+                  <div class="badge-body__divider"></div>
+                  <div class="badge-description">
+                    <i class="icon badge-description__icon badge-icon__grey"
+                      >error</i
+                    >
+                    <span class="badge-description__text">
+                      Could not connect to Tag Assistant
+                      <a
+                        data-ng-href="https://support.google.com/tagassistant/answer/10039345"
+                        target="_blank"
+                        rel="noopener"
+                        href="https://support.google.com/tagassistant/answer/10039345"
+                      >
+                        Learn more
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <!-- end ngSwitchWhen: -->
+                <div class="badge-footer">
+                  <!-- ngSwitchWhen: NOT_CONNECTED --><button
+                    class="btn btn--neutral ng-scope"
+                    data-ng-switch-when="NOT_CONNECTED"
+                    data-ng-click="ctrl.restart()"
+                    title="Resume debugging this domain"
+                  >
+                    Open Tag Assistant</button
+                  ><!-- end ngSwitchWhen: -->
+                  <button
+                    class="btn btn--neutral"
+                    data-ng-click="ctrl.disconnect()"
+                  >
+                    Finish
+                  </button>
+                </div>
+              </div> </tag-assistant-badge
+            ><!-- end ngSwitchWhen: -->
+            <!-- ngSwitchWhen: CONVERSION -->
+          </div>
+          <!-- end ngIf: !ctrl.isCollapsed -->
+        </div>
+      </frame-auto-resize>
+    </debug-badge>
+    <script src="gracias_cupon_data/badge.js"></script>
+    <script type="text/javascript" id="dc-script-loader" src="//tr.datacrush.la/portal/90.js"></script>
+  </body>
+</html>
