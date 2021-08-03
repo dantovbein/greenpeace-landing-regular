@@ -237,7 +237,11 @@ jQuery(document).ready(function() {
 		};
 		
 		var dcDataSynchro = {portalID: '90',synchroKey: 'cPEefSbDVUcMgdGEFYDDZWYTTWJNHfXBJagGJXIeGCFFdJHhAK'};
-		dcS.synchro.init(dcDataSynchro, dcDataContact);	
+		dcS.synchro.init(dcDataSynchro, dcDataContact);
+
+    // Send event (SK - Donación Paso 1)
+    dc.track.event('90', '90ewFHJUH5NTbIY9c', $('#email').val());
+    window.localStorage.setItem('tmpUserEmail', $('#email').val());
 	}
 	
 
@@ -344,7 +348,10 @@ function prepareSubmit(){
         //msg = JSON.parse(msg);
         $('#btn_dona_loading').hide();
         $('#btn_dona').attr('disabled', false);
-  
+
+        // Send event (SK - Donación Paso 2)
+        dc.track.event('90', '903NkNhZXaQEFkgrM', $('#email').val());
+
         window.location.href = urlGracias;
         
       }).fail(function(e){
