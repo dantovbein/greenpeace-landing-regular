@@ -1,0 +1,547 @@
+/***** FONTS *****/
+
+@font-face {
+    font-family: 'paytone';
+    src: url('fonts/paytoneone-webfont.eot');
+    src: url('fonts/paytoneone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/paytoneone-webfont.woff2') format('woff2'),
+         url('fonts/paytoneone-webfont.woff') format('woff'),
+         url('fonts/paytoneone-webfont.ttf') format('truetype'),
+         url('fonts/paytoneone-webfont.svg#paytone_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #7D7D7D;
+ /* line-height: 30px;*/
+  text-align: center;
+}
+
+strong { font-weight: 500; }
+
+a, a:hover, a:focus {
+	color: #19b9e7;
+	text-decoration: none;
+  -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+h1, h2 {
+	margin-top: 10px;
+	font-size: 38px;
+  font-weight: 100;
+  line-height: 50px;
+}
+
+h3 {
+	font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+img { max-width: 50%; }
+
+.medium-paragraph {
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.blue { color: #19b9e7; }
+
+::-moz-selection { background: #19b9e7; color: #fff; text-shadow: none; }
+::selection { background: #19b9e7; color: #fff; text-shadow: none; }
+
+.main-title{
+	font-family: 'paytone', Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+	color:#66CC00;
+  margin-bottom: 0px;
+	text-align: left;
+}
+
+.sub-title{
+	font-family: 'paytone', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px #000000;
+  margin-bottom: 0px;
+	text-align: left;
+}
+
+.btn-link-1 {
+	display: inline-block;
+	height: 50px;
+	margin: 0 5px;
+	padding: 16px 20px 0 20px;
+	background: #19b9e7;
+	font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #fff;
+  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+}
+.btn-link-1:hover, .btn-link-1:focus, .btn-link-1:active { outline: 0; opacity: 0.6; color: #fff; }
+
+.btn-link-2 {
+	display: inline-block;
+	height: 50px;
+	margin: 0 5px;
+	padding: 15px 20px 0 20px;
+	background: rgba(0, 0, 0, 0.3);
+	border: 1px solid #fff;
+	font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #fff;
+  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+}
+.btn-link-2:hover, .btn-link-2:focus, 
+.btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
+
+
+/***** Top menu *****/
+
+.navbar {
+	padding-top: 0px;
+	background: #333;
+	background: rgba(51, 51, 51, 0.3);
+	border: 0;
+	-o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+.navbar.navbar-no-bg { background: none; }
+
+.navbar-green{
+	background: #66CC00 !important;
+}
+
+ul.navbar-nav {
+	font-size: 16px;
+	color: #fff;
+}
+
+.navbar-inverse ul.navbar-nav li { padding-top: 15px; padding-bottom: 8px; }
+
+.navbar-inverse ul.navbar-nav li .li-text { opacity: 0.8; }
+
+.navbar-inverse ul.navbar-nav li a { display: inline; padding: 0; color: #fff; }
+.navbar-inverse ul.navbar-nav li a:hover { color: #fff; opacity: 1; border-bottom: 1px dotted #fff; }
+.navbar-inverse ul.navbar-nav li a:focus { color: #fff; outline: 0; opacity: 1; border-bottom: 1px dotted #fff; }
+
+.navbar-inverse ul.navbar-nav li .li-social a {	
+	margin: 0 2px; /*margin: 0 5px;*/
+	font-size: 8px; /*font-size: 28px;*/
+	vertical-align: middle;
+}
+
+.navbar-inverse ul.navbar-nav li .li-social a:hover, 
+.navbar-inverse ul.navbar-nav li .li-social a:focus { border: 0; color: #19b9e7; }
+
+.navbar-brand {
+	width: 150px;
+	background: url(../img/greenpeace-logo.png) left center no-repeat;
+	background-size: 150px;
+	text-indent: -99999px;
+}
+
+/***** Progress Bar *****/
+
+.progress.vertical {
+	width: 40px !important;
+}	
+.progress-bar {
+	background-color: #00cc33 !important;
+}
+.progress {
+	background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0 !important;
+}
+.progress .progressbar-back-text {
+	font-weight:bold;
+	white-space: nowrap;
+	font-size: 16px !important;
+	top: 180px;
+	left: 0px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);			
+}
+.progress .progressbar-front-text {
+	font-weight:bold;
+	white-space: nowrap;
+	font-size: 16px !important;
+	margin-bottom: -180px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);			
+}
+.vh {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(25%);
+  transform: translateY(25%);
+}
+
+/***** Top content *****/
+
+.row_pad {
+	padding: 20px !important;
+}
+
+.inner-bg {
+    padding: 10px 0 40px 0;
+}
+
+.top-content .description {
+	margin: 20px 0 10px 0;
+}
+
+.top-content .description p { /*opacity: 0.8;*/ }
+
+.top-content .description a {
+	color: #fff;
+}
+.top-content .description a:hover, 
+.top-content .description a:focus { border-bottom: 1px dotted #fff; }
+
+.top-content .top-big-link {
+	margin-top: 35px;
+}
+
+.form-top {
+	overflow: hidden;
+	padding: 0 25px 15px 25px;
+	background: rgba(0,0,0,0.6);
+	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+	text-align: left;
+	padding-bottom:0px;
+}
+
+.form-top-left {
+	float: left;
+	width: 75%;
+	padding-top: 25px;
+}
+
+.no-padding { padding: 0; }
+
+.left{	text-align:left; }
+
+.form-top-left h3 { margin-top: 0; }
+
+.form-top-right {
+	float: right;
+	width: 80px;
+	font-size: 66px;
+	color: #fff;
+	line-height: 60px;
+	text-align: center;
+}
+
+.form-bottom {
+	padding: 25px 25px 30px 25px;
+	background: rgba(0,0,0,0.6);
+	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+	text-align: left;
+}
+
+.form-bottom form textarea {
+	height: 100px;
+}
+
+.form-bottom form .input-error {
+	border-color: #19b9e7;
+}
+
+.aclaracion {
+	text-align: right;
+	margin-top: 15px;
+}
+
+.code-number {
+	line-height:36px;
+}
+
+.paddLeft0 {
+	padding-left: 0px;
+}
+
+.paddLeft5 {
+	padding-left: 5px;
+}
+
+.paddLeft5 {
+	padding-left: 10px;
+}
+.paddRight0 {
+	padding-right: 0px;
+}
+
+.verticalText{
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform: rotate(-90deg);
+    white-space:nowrap;
+    display:block;
+    bottom:0;
+    width:20px;
+    height:20px;
+}
+
+/***** Media queries *****/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#columnaProgreso{
+		height:836px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#columnaProgreso{
+		height:905px !important;
+	}
+}
+
+@media (max-width: 767px) {
+
+	#columnaProgreso{	display:none;	}
+	#texto_form{ display:none; }
+	#divtexto2{ display:none; }
+	#divtexto3{	display:none; }
+	#conocemas{ display:none; }
+	#divtexto2b{ display:block !important; }
+	#divtexto3b{ display:block !important; }
+	#acciones {display: none;}
+
+	
+	
+	.textos{
+		margin-bottom: 20px;
+	}	
+
+	.navbar { padding-top: 0; }
+	.navbar.navbar-no-bg { background: #333; background: rgba(51, 51, 51, 0.9); }
+	.navbar-brand { height: 60px; margin-left: 15px; }
+
+	/* logo */
+  .navbar-brand {
+  	background-image: url(../img/greenpeace-logo-chico.png) !important; 
+  	background-repeat: no-repeat !important; 
+  	background-size: 123px !important;
+  }
+	.navbar-collapse { border: 0; }
+	.navbar-toggle { margin-top: 12px; }
+	
+	.inner-bg { padding: 20px 0 30px 0; }
+	.top-content .text { padding-top: 0; padding-bottom: 0px; }
+	.top-content .top-big-link { margin-top: 25px; }
+	.top-content .top-big-link a.btn { margin-top: 10px; }
+
+	h1, h2 {  font-size: 24px !important;  }
+}
+
+@media (max-width: 457px) {
+	.formulario .unite .data h3 {
+		font-size: 12px !important;
+		line-height: 12px;
+	}
+
+
+}
+
+@media (max-width: 415px) {
+	.formulario .unite .data h3 {
+		font-size: 10px !important;
+		line-height: 12px;
+	}	
+	h1, h2 { font-size: 24px !important; }
+	
+}
+
+
+
+
+/* Retina-ize images/icons */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+	
+	/* logo */
+    .navbar-brand {
+    	background-image: url(../img/greenpeace-logo-chico.png) !important; 
+    	background-repeat: no-repeat !important; 
+    	background-size: 123px !important;
+    }
+	
+}
+
+.conoce-mas {
+    background-color: #000;
+    background-image: url(../img/bg-btn.png);
+    background-position: 93px 14px;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    font-size: 10px;
+    margin: 5px auto 30px;
+    padding: 10px 40px 10px 12px;
+    text-decoration: none;
+    width: 130px;
+}
+
+.textos{
+	/*backgroun/*
+	/*margin-bottom: 40px;*/
+	padding:8px;
+}
+
+.textos label{
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.formulario .box {
+	border-bottom: 1px solid #aeaeae;
+	padding-bottom: 25px;	
+}
+
+.formulario .boxNoPad{
+	/*background: #FAFBFB none repeat scroll 0 0;*/
+	border-bottom: 1px solid #aeaeae;	
+}
+
+.formulario .dona h2 {	
+	margin-bottom: 10px;
+	text-align: center;
+	color: #00ce00;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 29px;
+	line-height: 30px;
+	margin-top: 0px;
+}
+
+.formulario .dona p {
+	/*font-weight: bold;*/
+	font-size: 14px;
+	text-align: left;
+
+}
+
+.formulario .dona p span {
+	font-size: 14px;
+	text-align: left;
+}
+
+
+
+.text-upper{
+	text-transform: uppercase;
+}
+
+.formulario .unite {
+  padding-bottom: 40px;
+  padding-top: 15px;
+}
+
+.formulario .unite .data {
+	background: url(../img/remera.png) no-repeat;
+	padding-left: 119px;
+	height: 78px;
+	padding-top: 3px;	
+}
+
+.formulario .unite .data h3 {
+	font-size: 14px;
+	margin-top: 0px;
+	text-transform: uppercase;
+}
+
+.formulario .unite .data .green {
+	color: #00ce00;
+	font-weight: normal;
+}
+
+.lock {
+	background: url(../img/lock.png) no-repeat;
+	padding-left: 45px;
+	margin-bottom: 0px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.autorizo{
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: bold;	
+  font-size: 12px;
+}
+
+.formulario .tarjeta {
+	margin-top: 0px;
+	padding-bottom: 10px;
+}
+.formulario .tarjeta h3 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 0px;
+}
+
+p.help {
+	color: #848484;
+	font-size: 10px;
+	text-transform: uppercase;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.tooltip.top .tooltip-inner {
+    background-color: #a94442;
+}
+.tooltip.top .tooltip-arrow {
+      border-top-color: #a94442;
+}	
+
+#talles h6 {
+	float: left;
+	line-height: 20px;
+	vertical-align: middle;
+	margin-top: 3px;
+	margin-right: 5px;
+	
+}
+
+.warning{
+	color:#a94442;
+	font-weight: bold;
+	margin:0px !important;
+	clear: both;
+}
+
+
+@media(max-width: 1200px){
+#contenido{
+    position: relative !important;    
+}

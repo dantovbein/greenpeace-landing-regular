@@ -1,0 +1,87 @@
+
+body {
+	font-family: Helvetica, Arial;
+}
+
+.green{
+	background-color: #66cc00;
+	padding: 5px;
+	font-size:16px;
+	color:#fff;
+	font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* CONTADOR */
+.contenedor_bar {margin-top:10px; }
+
+.contenedor_bar .sumate { 
+	 float:left; 
+	 color:#53af06; 
+	 font-size: 13px; 
+	 font-weight: bold; 
+	 text-transform: uppercase;
+	}
+
+.contenedor_bar .meta   { 
+    float:right; 
+    text-align: right; 
+    text-transform: uppercase;
+    font-size: 13px; 
+    font-weight: bold; 
+    color:#c0c0c0;
+}
+
+.barrita {
+	width:100%; 
+	height: 51px; 
+	text-transform: uppercase; 
+	font-size: 12px; 
+	font-weight: bold;
+	padding-top: 10px;
+   float:left; 
+}
+
+.barrita .counterNumber {
+	color:#ffffff;
+	text-shadow:1px 0px 0px grey;
+	float:left;
+	margin-left:12px;
+	position:relative;
+	top:-30px;
+	font-size:14px;
+}
+
+.barrita .barrita-firmas{
+	font-size:22px;
+	float:left;
+	margin-left:12px;
+	position:relative;
+	top:-9px;
+	margin-right: 5px;
+}
+
+.barrita .deCounterNumber {
+	color:#6f6f6f; 
+	text-shadow:1px 0px 0px white; 
+	float:right; 
+	margin-right:12px;
+	position:relative;
+	top:-30px;
+}
+
+.ruler {
+	background:url(images/progress_white.png) no-repeat top center; height:51px; width:100%;
+}
+
+.progress {
+	height:51px;
+  width:0px;
+	position:relative;
+	top:-51px;
+}
+
+.div_progress{
+	margin-bottom:-75px;
+}
+

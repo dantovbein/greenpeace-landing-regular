@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>  
+	<!-- <script src="//cdn.optimizely.com/js/211797349.js"></script>  -->
+   
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Apoya nuestro trabajo con tu donación">
+    <title>Asociate a Greenpeace</title>
+
+    <!-- CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon and touch icons -->
+		<link rel="shortcut icon" href="assets/ico/favicon.png">
+		
+		<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+	<script src="assets/js/retina-1.1.0.min.js"></script>
+
+  	<script src="assets/js/validationsPasos.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	
+	<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+	<!-- <script type="text/javascript" src="js/main.js" defer="defer"></script> -->
+	<script type="text/javascript" src="js/mercadopago.js" defer="defer"></script>
+	
+
+	
+		<script>
+		 Start of Async DataCrush Synchro Code -->
+		(function(d,s,i,r) {					
+		 if (d.getElementById(i)){return;}
+		 var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+		 n.id=i;n.src='//tr.datacrush.la/synchro/synchro.js?'+(Math.ceil(new Date()/r)*r);
+		 e.parentNode.insertBefore(n, e);
+		})(document,"script","synchro",300000);
+
+		var dcDataSynchro = {portalID: '90',synchroKey: 'cPEefSbDVUcMgdGEFYDDZWYTTWJNHfXBJagGJXIeGCFFdJHhAK'};
+		<!-- End of Async DataCrush Synchro Code -->
+	</script>
+ 
+ 
+ <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Q53C9T');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+
+
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Q53C9T"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<!-- Top menu -->
+	<nav class="navbar navbar-inverse navbar-green" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Greenpeace</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="col-lg-8">  
+			<div class="row">
+					<div class="row row_pad textos" style="margin-bottom:0px;">
+						<div class="col-md-12 no-padding">
+							<img src="https://unite.greenpeace.org.ar/cupon_general/media/GP02E9X_Web_size.jpg" alt="Gracias! Unite ahora!">
+						</div>	
+					</div>
+					<div class="row row_pad textos" style="margin-bottom:0px;">
+						<div class="col-md-12  text-top">
+							<h1 class="main-title"><strong>Asociate a Greenpeace</strong></h1>
+							<br/>
+							<div class="description">
+								<p class="left">
+									Cuidamos la naturaleza que amamos. Buscamos soluciones y generamos cambios. 	
+								</p>
+								<p class="left">
+									Con vos podemos transformar la realidad. Apoyá nuestras campañas con tu donación.
+								</p>
+								<ul class="left">
+								<li>Defendemos el Mar Argentino y los océanos del mundo</li>
+								<li>Promovemos hábitos sustentables con nuestro entorno</li>
+								<li>Investigamos y denunciamos delitos ambientales</li>
+								<li>Trabajamos con comunidades indígenas y campesinas</li>
+								<li>Brindamos propuestas para frenar la crisis climática</li>
+								<li>Fomentamos la producción sin contaminantes, el reciclaje y la reutilización</li>
+								</ul>
+								
+							</div>
+						</div>
+					</div>	
+			</div>
+		</div>
+	
+		<nav class="col-lg-4">
+			<div class="row">
+				<form class="formulario" >
+					<div class="boxNoPad dona">
+						<h2>Dona ahora</h2>
+					</div>
+				</form>	
+			</div>
+			
+		
+		<div id="wrapperPaso1">
+		  <form class="formulario" id="formStep1" name="formStep1" action="sf/createContact" method="POST">
+				  
+			  <!-- REFERRER -->
+			  <input type="hidden" name="referrer" value =""/>
+			 			  
+			  <div class="row row_pad textos">
+					<div class="col-sm-12">
+						<!-- IMPORTE -->
+						<h5 class="autorizo">Autorizo el débito automático mensual de:</h5>	
+						<div id="importesVariables"></div>
+						
+						<!-- 
+						<div class="radio text-left">
+						  <label><input  type="radio" value="3000" name="importe" checked>$3.000</label>                
+						</div>
+						<div class="radio text-left">
+						  <label><input  type="radio" value="5000" name="importe">$5.000</label>
+						</div>
+						<div class="radio text-left">
+						  <label><input  type="radio" value="7000" name="importe">$7.000</label>
+						</div>
+						<div class="radio text-left">
+						  <label><input type="radio" value="10000" name="importe">$10.000</label>
+						</div>
+						<div class="radio text-left">
+						  <label><input type="radio" value="0" name="importe">OTRAS DONACIONES</label>
+						</div>
+						-->
+									
+
+						<!-- MONTO -->
+						<div class="form-group">      
+						  <a id='a_monto' data-original-title="Campo obligatorio">
+							<input type="text" id="monto" name="monto" data-name="Monto" class="form-control" placeholder="Otro monto *"/> 
+							<span id='span_monto'></span>
+						  </a>
+						</div>
+
+						<!-- EMAIL -->                
+						<div class="form-group">
+						  <a id='a_email' data-original-title="Email inválido">
+							<input type="email" id="email" name="email" data-name="Email" class="form-control" placeholder="Email *" />
+							<span id='span_email'></span>          
+						  </a>                
+						</div>
+					 					  
+					  <!-- NOMBRE -->
+					  <div class="form-group">      
+						<a id='a_nombre' data-original-title="Campo obligatorio">
+						  <input type="text" id="nombre" name="nombre" data-name="Nombre" class="form-control" placeholder="Nombre *" /> 
+						  <span id='span_nombre'></span>
+						</a>
+						<p class="help">Tal y como aparece en la tarjeta de crédito</p>
+					  </div>
+
+					  <!-- APELLIDO -->
+					  <div class="form-group">  
+						<a id='a_apellido' data-original-title="Campo obligatorio">                                          
+						  <input type="text" id="apellido" name="apellido" data-name="Apellido" class="form-control" placeholder="Apellido *" /> 
+						  <span id='span_apellido'></span>
+						</a>
+						<p class="help">Tal y como aparece en la tarjeta de crédito</p>
+					  </div>
+					 
+
+					
+					  <!-- TELEFONO -->   
+					  <div class="form-group"> 
+						<div class="row">
+						<div class="col-xs-4 paddRight0"> 
+							<div class="form-group" style="margin-bottom:0 !important;"> 
+							  <a id='a_cod_area' data-original-title="Código de Area Inválida">
+							    <input type="text"  pattern="[0-9]*" class="form-control" required maxlength="4" minlength="2" id="cod_area" data-name="codigo de area" name="cod_area"  placeholder="Cod Area *">
+							    <span id='span_cod_area'></span>
+							  </a>
+							</div>
+						  </div>
+						
+						  <div class="col-xs-8"> 
+							<div class="form-group" style="margin-bottom:0 !important;"> 
+							  <a id='a_celular' data-original-title="Telefono Inválido">
+								<input type="text" pattern="[0-9]*" maxlength="8" name="celular" id="celular" class="form-control" placeholder="Telefono*">
+								<span id='span_celular'></span>
+							  </a>
+							</div>
+						  </div>
+						</div>
+						<p class="help">Escribe solo números. No agregues guiones</p>
+					  </div>
+					
+					<button id="btn_siguiente" type="button" class="btn enfasis" style="margin-top:15px;">Siguiente</button>   
+				
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		
+		
+		<div id="wrapperPaso2" style="display:none">
+			<form  method="post" action="http://localhost:8000/sf/createContact" id="pay" name="pay" class="formulario">
+				<div class="row row_pad textos">
+										
+					<div class="tarjeta" style="padding-bottom:0px; margin-bottom:0px;">             
+						<h3>MEDIO DE PAGO</h3>
+					</div>
+					<div  class="box" style="padding-bottom:10px; margin-bottom:10px;">
+					<!-- MEDIO DE PAGO -->            
+					<div class="radio text-left">
+					  <label>
+						<input type="radio" value="Tarjeta Credito" name="medio_pago" checked>Tarjeta de Crédito
+					  </label>
+					</div>
+										
+					<!--<div class="radio text-left">
+					  <label>
+						<input type="radio" value="No posee tarjeta" name="medio_pago">Prefiero que me llamen
+					  </label>                
+					</div>-->
+					
+				  </div>
+				  
+				  
+				  <!-- PREFIERO QUE ME LLAMEN -->
+				   <div id="campos_prefiero" class="box" style="padding-bottom:10px; margin-bottom:10px;">
+						<h5 class="autorizo">Horario:</h5>	
+						<div>
+							<div class="radio text-left"><label><input  type="radio" value="" name="horario" checked>Ahora</label></div>
+							<div class="radio text-left"><label><input  type="radio" value="" name="horario" >De 9 a 15 hs</label></div>
+							<div class="radio text-left"><label><input  type="radio" value="" name="horario" >De 15 a 18 hs</label></div>
+						</div>
+					   
+						 <h5 class="autorizo">Telefono:</h5>	
+						 <!-- TELEFONO -->   
+						  <div class="form-group"> 
+							<div class="row">
+							<div class="col-xs-4 paddRight0"> 
+								<div class="form-group" style="margin-bottom:0 !important;"> 
+								  <a id='a_cod_area2' data-original-title="Código de Area Inválida">
+									<input type="text"  pattern="[0-9]*" class="form-control" required maxlength="4" minlength="2" id="cod_area2" data-name="codigo de area" name="cod_area2"  placeholder="Cod Area *">
+									<span id='span_cod_area2'></span>
+								  </a>
+								</div>
+							  </div>
+							
+							  <div class="col-xs-8"> 
+								<div class="form-group" style="margin-bottom:0 !important;"> 
+								  <a id='a_celular2' data-original-title="Telefono Inválido">
+									<input type="text" pattern="[0-9]*" name="celular2" id="celular2" class="form-control" placeholder="Telefono*">
+									<span id='span_celular2'></span>
+								  </a>
+								</div>
+							  </div>
+							</div>
+							<p class="help">Escribe solo números. No agregues guiones</p>
+						  </div>
+					   </div>
+					
+				
+					<!-- TARJETA -->
+				  <div  class="tarjeta" id="titulo_tarjeta">             
+					<h3>TARJETA DE CRÉDITO</h3>
+				  </div>
+
+				  <div id="campos_tarjeta" class="box" style="padding-bottom:10px; margin-bottom:10px;">
+
+					<!-- NUMERO DE TARJETA -->
+					<div class="form-group">
+					  <a id='a_tarjeta_numero' data-original-title="Campo obligatorio">
+						<input maxlength="16" data-checkout="cardNumber"  type="text" pattern="[0-9]*" id="tarjeta_numero" name="tarjeta_numero" class="form-control" placeholder="Número de la tarjeta *" /> 
+						<span id='span_tarjeta_numero'></span>
+					  </a>
+					  <p class="help">Escribe solo números. No agregues guiones</p>
+					</div>
+					
+					<!-- CVV -->
+					<div class="form-group">
+					  <a id='a_cvv' data-original-title="Campo obligatorio">
+						<input type="password" class="form-control" data-checkout="securityCode" maxlength="4" id="cod_seguridad"  placeholder="Codigo de Seguridad *">
+						<span id='cvv'></span>
+					  </a>
+					</div>
+
+					 <!-- FECHA DE VENCIMIENTO -->                            
+					<div class="form-group" style="margin-bottom:0 !i6ortant;">
+					  <h5 class="text-left text-upper">Fecha de vencimiento *:</h5>
+					  <div class="row">
+						<div class="col-xs-6 paddRight0"> 
+						  <div class="form-group">
+							<a id='a_tarjeta_mes' data-original-title="Campo obligatorio">               
+								<select class="form-control" data-checkout="cardExpirationMonth" data-name="Mes" name="mesvencimiento" id="mes_vencimiento">
+								<option value="0" selected>Mes</option>
+								<option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option>
+								<option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option>
+								<option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+							  </select>
+							  <span id='span_tarjeta_mes'></span>
+							</a>
+						  </div>
+						</div>  
+						<div class="col-xs-6">
+						  <div class="form-group">
+							<a id='a_tarjeta_anio' data-original-title="Campo obligatorio">
+							  <select class="form-control" data-checkout="cardExpirationYear" data-name="Año" name="anovencimiento" id="ano_vencimiento">
+								<option value="0" selected>Año</option>
+							  </select>
+							  <span id='span_tarjeta_anio'></span>
+							</a>
+						  </div>
+						</div>  
+					  </div>  
+					</div>  
+					
+					<!-- DOCUMENTO -->
+					<div class="form-group" style="margin-bottom:0 !important;">
+					  <div class="row">
+						<div class="col-xs-4 paddRight0"> 
+						  <div class="form-group">
+							<a id='a_tipo_documento' data-original-title="Campo obligatorio">
+								<select class="form-control" data-checkout="docType" id="docType"  name="tipodocumento">								
+							  </select>
+							  <span id='span_tipo_documento'></span>
+							</a>
+						  </div>
+						</div>  
+						<div class="col-xs-8">
+						  <div class="form-group">
+							<a id='a_documento' data-original-title="Campo obligatorio">
+								<input type="text" class="form-control" id="documento" minlength="7" maxlength="8" data-checkout="docNumber" data-name="Documento" name="documento" placeholder="Numero de Documento *">
+							  <span id='span_documento'></span>
+							</a>
+						  </div>
+						</div>  
+					  </div>  
+					</div>  					
+					
+					<!-- TITULAR -->
+					<div class="form-group">
+					  <a id='a_tarjeta_numero' data-original-title="Campo obligatorio">
+						<input type="text" class="form-control" data-name="Nombre de Titular " data-checkout="cardholderName"  id="cardholder" name="cardholder" placeholder="Nombre del Titular *">
+						<span id='span_tarjeta_numero'></span>
+					  </a>
+					</div>
+					
+				  </div>          
+				</div>					
+					
+				
+					<div id="errormsg"></div>
+					<!-- DONA --> 
+					<button id="btn_dona" type="button" class="btn enfasis" style="margin-top:15px;">DONA!</button> 
+					<button id="btn_prefiero" type="button" class="btn enfasis" style="margin-top:15px;"  onclick="prefieroLlamada()">DONA!</button> 					
+					<br/>
+						
+
+				</div>
+				<!-- <input type="hidden" id="url_return" name="url_return" value ="http://unete.greenpeace.cl/cupongral2Pasos/gracias/gracias_cupon.php"> -->
+			</form>
+		</div>
+	</nav>
+			
+	<div class="col-lg-12">  
+		<div class="row">
+			<!-- LOCK -->
+			<div class="lock">   
+<br/><br/>			
+				<p>Deja tus datos con confianza. Este sitio es 100% seguro. Tus datos viajarán encriptados y solo nosotros podemos acceder a ellos.</p>
+				<p style="font-size:11px; font-weight: normal;">Al completar el formulario aceptás nuestra <a href="https://www.greenpeace.org/argentina/politica-privacidad/ " target="_blank">política de privacidad</a>. Recibirás información sobre nuestras campañas y formas de participar. Podrás desuscribirte cuando quieras.</p>
+			</div> 
+		</div>
+	</div>
+					
+</div>
+			
+  <script type="text/javascript" id="dc-script-loader" src="//tr.datacrush.la/portal/90.js"></script>
+  
+	
+
+</body>
+
+</html>

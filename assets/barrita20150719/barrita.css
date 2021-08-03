@@ -1,0 +1,93 @@
+
+body {
+	font-family: Helvetica, Arial;
+}
+
+.green{
+	background-color: #66cc00;
+	padding: 5px;
+	font-size:16px;
+	color:#fff;
+	font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* CONTADOR */
+.contenedor_bar {margin-top:10px; }
+
+.contenedor_bar .sumate { 
+	 float:left; 
+	 color:#53af06; 
+	 font-size: 13px; 
+	 font-weight: bold; 
+	 text-transform: uppercase;
+	}
+
+.contenedor_bar .meta   { 
+    float:right; 
+    text-align: right; 
+    text-transform: uppercase;
+    font-size: 13px; 
+    font-weight: bold; 
+    color:#c0c0c0;
+}
+
+.barrita {
+	width:100%; 
+	height: 30px; 
+	text-transform: uppercase; 
+	font-size: 12px; 
+	font-weight: bold;
+	padding-top: 10px;
+  float:left; 
+	
+}
+
+.vertical{
+	-ms-transform: rotate(-90deg); 
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+	position:relative;
+	top:200px;
+}
+
+.barrita .counterNumber {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color:#ffffff;
+	//text-shadow:1px 0px 0px grey;
+	float:left;
+	margin-left:12px;
+	position:relative;
+	top:-24px;
+	left: 70px;
+}
+
+.barrita .deCounterNumber {
+	color:#fff; 
+	/*text-shadow:1px 0px 0px white; */
+	font-size:10px;
+	float:right; 
+	margin-right:12px;
+	margin-top:7px;
+	position:relative;
+	top:-30px;
+}
+
+.ruler {
+	/*background:url(images/progress_white.png) no-repeat top center;*/ height:30px; width:100%;
+	background: rgba(0,0,0,0.4);
+}
+
+.progress {
+	height:30px;
+  width:0px;
+	position:relative;
+	top:-30px;
+}
+
+.div_progress{
+	margin-bottom:-30px;
+}
+
